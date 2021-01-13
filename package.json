@@ -1,12 +1,12 @@
 {
   "name": "dynamic-script-loader",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Dynamically append and load scripts into your webpage only when they're needed.",
   "source": "src/index.js",
   "main": "dist/index.js",
-  "exports": "dist/index.modern.js",
   "module": "dist/index.module.js",
   "unpkg": "dist/index.umd.js",
+  "esmodule": "dist/index.modern.js",
   "types": "types/index.d.ts",
   "files": [
     "dist",
@@ -23,7 +23,12 @@
     "dynamic import",
     "import script",
     "dynamic javascript"
-  ],
+  ],  
+  "homepage": "https://github.com/PandaSekh/Dynamic-Script-Loader#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PandaSekh/Dynamic-Script-Loader.git"
+  },
   "devDependencies": {
     "jest": "^26.6.3",
     "microbundle": "^0.13.0"
