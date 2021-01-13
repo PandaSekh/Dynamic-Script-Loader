@@ -2,7 +2,7 @@
  * @param {string} scriptSrc
  * @param {function} callback
  */
-export default function (scriptSrc, callback) {
+export default async function (scriptSrc, callback) {
 	const hash = scriptSrc => {
 		let hash = 0,
 			i,
