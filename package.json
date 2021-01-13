@@ -1,6 +1,6 @@
 {
   "name": "@pandasekh/dynamic-script-loader",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Dynamically append and load scripts into your webpage only when they're needed.",
   "source": "src/index.js",
   "main": "dist/index.js",

@@ -3,6 +3,11 @@
 
 > Tiny (<350B) package to dynamically import Javascript files only when needed 🐼
 
+Functionalities:
+- Promise based,
+- Hashes the script source, preventing multiple identical imports,
+- Small, UMD file is about 350 bytes only!
+
 * * *
 
 - [Installation](#installation)
@@ -43,14 +48,17 @@ const load = require("@pandasekh/dynamic-script-loader")
 // Then import a library only when needed
 load("https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js")
 
-// You can also pass a callback function which will run on script load
-load("https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js", () => console.log("Loaded"))
+// Promise based API
+load("https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js").then(() => console.log("Loaded!"))
+
+// Returns the generated DOM element
+load("https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js").then(element => console.log(element.src))
 ```
 
 ## API 
 - ### load
-`load(script: string, callback: Function)`
-Default function. It will load the given script and call the callback whenever the script is loaded.
+`load(src: string) => Promise<HTMLScriptElement>`
+Default function, it will load a script asynchronously and return the HTMLScriptElement just created.
 
 ## Contribute
 Contributions are welcome and appreciated.

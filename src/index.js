@@ -1,9 +1,9 @@
 /**
- * @param {string} scriptSrc
- * @param {string}? script Id
- * @returns {Promise} script DOM element
+ * @param {string} src
+ * @param {string} id
+ * @returns {Promise} domElement
  */
-export default (scriptSrc, scriptId) => {
+export default (scriptSrc) => {
 	return new Promise(resolve => {
 		const hash = scriptSrc => {
 			let hash = 0,
@@ -17,7 +17,7 @@ export default (scriptSrc, scriptId) => {
 			return hash;
 		};
 
-		const hashedId = scriptId || hash(scriptSrc);
+		const hashedId = hash(scriptSrc);
 
 		if (!document.getElementById(hashedId)) {
 			const script = document.createElement("script");
