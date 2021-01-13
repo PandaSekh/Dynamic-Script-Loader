@@ -1,7 +1,8 @@
-export default (scriptSrc, callback) => {
-	console.log("called");
-	console.log("Callback: ", callback);
-
+/**
+ * @param {string} scriptSrc
+ * @param {function} callback
+ */
+export default function (scriptSrc, callback) {
 	const hash = scriptSrc => {
 		let hash = 0,
 			i,
@@ -16,8 +17,6 @@ export default (scriptSrc, callback) => {
 
 	const hashedId = hash(scriptSrc);
 
-	console.log("Hashed id: ", hashedId);
-
 	const checkScript = document.getElementById(hashedId);
 
 	if (!checkScript) {
@@ -27,14 +26,12 @@ export default (scriptSrc, callback) => {
 		document.body.appendChild(script);
 
 		if (callback) {
-			console.log("Going to callback");
 			script.onload = () => {
 				callback();
-				console.log("callback");
 			};
 		}
 	}
 	if (checkScript && callback) {
 		callback();
 	}
-};
+}
