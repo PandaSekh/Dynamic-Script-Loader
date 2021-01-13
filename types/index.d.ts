@@ -1,5 +1,2 @@
-/**
- * @param {string} scriptSrc
- * @param {function} callback
- */
-export default function _default(scriptSrc: string, callback: Function): void;
+declare function _default(scriptSrc: string, scriptId: any): Promise<any>;
+export default _default;
