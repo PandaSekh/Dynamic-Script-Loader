@@ -1,6 +1,7 @@
 # Dynamic Script Loader
+![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@pandasekh/dynamic-script-loader)
 
-> Tiny (219 bytes) package to dynamically import Javascript files only when needed 🐼
+> Tiny (<250 bytes) package to dynamically import Javascript files only when needed 🐼
 
 * * *
 
@@ -17,22 +18,27 @@
 Node:
 
 ```sh
-npm i dynamic-script-loader
+npm i -S @pandasekh/dynamic-script-loader
 ```
 
 Yarn:
 ```sh
-yarn add dynamic-script-loader
+yarn add @pandasekh/dynamic-script-loader
+```
+
+CDN:
+```js
+<script src="https://unpkg.com/@pandasekh/dynamic-script-loader@latest/dist/index.umd.js" />
 ```
 
 ## Examples
 
 ```js
 // Import using JS Modules
-import load from "dynamic-script-loader"
+import load from "@pandasekh/dynamic-script-loader"
 
 // or using CommonJS
-const load = require("dynamic-script-loader")
+const load = require("@pandasekh/dynamic-script-loader")
 
 // Then import a library only when needed
 load("https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js")
