@@ -1,7 +1,7 @@
 # Dynamic Script Loader
 ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@pandasekh/dynamic-script-loader)
 
-> Tiny (<250 bytes) package to dynamically import Javascript files only when needed 🐼
+> Tiny (<350B) package to dynamically import Javascript files only when needed 🐼
 
 * * *
 
