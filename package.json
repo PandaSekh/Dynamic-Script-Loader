@@ -17,7 +17,11 @@
     "prepublishOnly": "npm run build",
     "test": "jest"
   },
-  "author": "Alessio Franceschi",
+   "author": {
+    "name": "Alessio Franceschi",
+    "email": "alessiofranceschi2@gmail.com",
+    "url": "https://alessiofranceschi.me/"
+  },
   "license": "MIT",
   "keywords": [
     "dynamic import",

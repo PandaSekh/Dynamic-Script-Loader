@@ -14,10 +14,15 @@
 
 ## Installation
 
-With node:
+Node:
 
 ```sh
 npm i dynamic-script-loader
+```
+
+Yarn:
+```sh
+yarn add dynamic-script-loader
 ```
 
 ## Examples
@@ -37,11 +42,12 @@ load("https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js", () => c
 ```
 
 ## API 
-### `load(script: string, callback: Function)`
+- ### load
+`load(script: string, callback: Function)`
 Default function. It will load the given script and call the callback whenever the script is loaded.
 
 ## Contribute
 Contributions are welcome and appreciated.
 
 ## License
-[MIT License](https://github.com/PandaSekh/Dynamic-Script-Loader/blob/master/LICENSE).
+[MIT License](https://github.com/PandaSekh/Dynamic-Script-Loader/blob/master/LICENSE) (c) 2021 Alessio Franceschi
