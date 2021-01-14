@@ -2,7 +2,7 @@
 ![Node.js Package](https://github.com/PandaSekh/Dynamic-Script-Loader/workflows/Node.js%20Package/badge.svg)
 ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@pandasekh/dynamic-script-loader@latest)
 
-> Tiny (~300B) package to dynamically import Javascript files only when needed 🐼
+> 🐼 Tiny (~300B) package to dynamically import Javascript files only when needed
 
 Functionalities:
 - Promise based
@@ -13,6 +13,7 @@ Functionalities:
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Demo](#demo)
 - [API](#api)
 - [Contribute](#contribute)
 - [License](#license)
@@ -32,9 +33,20 @@ Yarn:
 yarn add @pandasekh/dynamic-script-loader
 ```
 
-CDN:
-```js
-<script src="https://unpkg.com/@pandasekh/dynamic-script-loader@latest/dist/index.umd.js" />
+### CDN
+- Skypack
+```js 
+import loader from 'https://cdn.skypack.dev/@pandasekh/dynamic-script-loader';
+```
+
+- Skypack Minified (Recommended) - v1.0.0
+```js 
+import loader from 'https://cdn.skypack.dev/pin/@pandasekh/dynamic-script-loader@v1.0.0-WVbL4ZUgz0Enyn4aBFAa/min/@pandasekh/dynamic-script-loader.js';
+```
+
+- unpkg
+```js 
+<script src="https://unpkg.com/@pandasekh/dynamic-script-loader@latest">
 ```
 
 ## Usage
@@ -46,6 +58,9 @@ import load from "@pandasekh/dynamic-script-loader"
 // or using CommonJS
 const load = require("@pandasekh/dynamic-script-loader")
 
+// Using a CDN (Node not required)
+import load from 'https://cdn.skypack.dev/@pandasekh/dynamic-script-loader';
+
 // Then import a library only when needed
 load("https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js")
 
@@ -55,6 +70,9 @@ load("https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js").then(()
 // Returns the generated DOM element
 load("https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js").then(element => console.log(element.src))
 ```
+
+## Demo
+Test this library on [Codepen](https://codepen.io/pandasekh/pen/LYRXjYy).
 
 ## API 
 - ### load
