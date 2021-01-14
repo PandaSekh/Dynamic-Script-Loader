@@ -39,7 +39,7 @@ yarn add @pandasekh/dynamic-script-loader
 import loader from 'https://cdn.skypack.dev/@pandasekh/dynamic-script-loader';
 ```
 
-- Skypack Minified (Recommended) - v1.0.0
+- Skypack Minified (Recommended) - v1.0.1
 ```js 
 import loader from 'https://cdn.skypack.dev/pin/@pandasekh/dynamic-script-loader@v1.0.1-1LiC7Jxsjxsz9e47Rvhc/min/@pandasekh/dynamic-script-loader.js';
 ```
