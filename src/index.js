@@ -3,6 +3,7 @@
  * @returns {Promise<HTMLScriptElement>}
  */
 export default scriptSrc => {
+	console.log("NEW");
 	return new Promise(resolve => {
 		const hash = scriptSrc => {
 			let hash = 0,
@@ -18,16 +19,14 @@ export default scriptSrc => {
 
 		const hashedId = hash(scriptSrc);
 
-		if (!document.getElementById(hashedId)) {
-			const script = document.createElement("script");
-			script.src = scriptSrc;
-			script.id = hashedId;
-			document.body.append(script);
+		let script = document.getElementById(hashedId);
 
-			script.onload = () => {
-				resolve(script);
-			};
-		} 
-		resolve(document.getElementById(hashedId));
+		if (script) resolve(script);
+
+		script = document.createElement("script");
+		script.src = scriptSrc;
+		script.id = hashedId;
+		document.body.append(script);
+		script.onload = resolve(script);
 	});
 };
