@@ -1,7 +1,8 @@
 # Dynamic Script Loader
-![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@pandasekh/dynamic-script-loader)
+![Node.js Package](https://github.com/PandaSekh/Dynamic-Script-Loader/workflows/Node.js%20Package/badge.svg)
+![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@pandasekh/dynamic-script-loader@latest)
 
-> Tiny (<350B) package to dynamically import Javascript files only when needed 🐼
+> Tiny (~300B) package to dynamically import Javascript files only when needed 🐼
 
 Functionalities:
 - Promise based
