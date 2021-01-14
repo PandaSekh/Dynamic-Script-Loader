@@ -15,7 +15,12 @@
   "scripts": {
     "build": "microbundle",
     "prepublishOnly": "npm run build && npm run test",
-    "test": "jest"
+    "pretest": "npm run build",
+    "test": "jest && codecov"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   },
   "author": {
     "name": "Alessio Franceschi",
@@ -38,6 +43,7 @@
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.12.11",
     "babel-jest": "^26.6.3",
+    "codecov": "^3.8.1",
     "jest": "^26.6.3",
     "microbundle": "^0.13.0"
   }
