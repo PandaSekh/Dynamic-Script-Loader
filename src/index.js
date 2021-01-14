@@ -3,7 +3,6 @@
  * @returns {Promise<HTMLScriptElement>}
  */
 export default scriptSrc => {
-	console.log("NEW");
 	return new Promise(resolve => {
 		const hash = scriptSrc => {
 			let hash = 0,
