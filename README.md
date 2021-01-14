@@ -41,7 +41,7 @@ import loader from 'https://cdn.skypack.dev/@pandasekh/dynamic-script-loader';
 
 - Skypack Minified (Recommended) - v1.0.0
 ```js 
-import loader from 'https://cdn.skypack.dev/pin/@pandasekh/dynamic-script-loader@v1.0.0-WVbL4ZUgz0Enyn4aBFAa/min/@pandasekh/dynamic-script-loader.js';
+import loader from 'https://cdn.skypack.dev/pin/@pandasekh/dynamic-script-loader@v1.0.1-1LiC7Jxsjxsz9e47Rvhc/min/@pandasekh/dynamic-script-loader.js';
 ```
 
 - unpkg
