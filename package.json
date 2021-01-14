@@ -1,6 +1,6 @@
 {
   "name": "@pandasekh/dynamic-script-loader",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Dynamically append and load scripts into your webpage only when they're needed.",
   "source": "src/index.js",
   "main": "dist/index.js",
@@ -17,7 +17,7 @@
     "prepublishOnly": "npm run build",
     "test": "jest"
   },
-   "author": {
+  "author": {
     "name": "Alessio Franceschi",
     "email": "alessiofranceschi2@gmail.com",
     "url": "https://alessiofranceschi.me/"
@@ -26,14 +26,18 @@
   "keywords": [
     "dynamic import",
     "import script",
-    "dynamic javascript"
-  ],  
+    "dynamic javascript",
+    "script loader"
+  ],
   "homepage": "https://github.com/PandaSekh/Dynamic-Script-Loader#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/PandaSekh/Dynamic-Script-Loader.git"
   },
   "devDependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "babel-jest": "^26.6.3",
     "jest": "^26.6.3",
     "microbundle": "^0.13.0"
   }
