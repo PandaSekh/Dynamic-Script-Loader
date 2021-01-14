@@ -1,7 +1,7 @@
 # Dynamic Script Loader
-![Node.js Package](https://github.com/PandaSekh/Dynamic-Script-Loader/workflows/Node.js%20Package/badge.svg)
+![Tests](https://github.com/PandaSekh/Dynamic-Script-Loader/workflows/Tests/badge.svg)
 [![codecov](https://codecov.io/gh/PandaSekh/Dynamic-Script-Loader/branch/master/graph/badge.svg?token=KTUH71UEZS)](https://codecov.io/gh/PandaSekh/Dynamic-Script-Loader)
-![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@pandasekh/dynamic-script-loader@latest)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/@pandasekh/dynamic-script-loader@1.1.0)
 
 > 🐼 Tiny (~300B) package to dynamically import Javascript files only when needed
 
