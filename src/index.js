@@ -27,6 +27,7 @@ export default scriptSrc => {
 			script.onload = () => {
 				resolve(script);
 			};
-		} else resolve(document.getElementById(hashedId));
+		} 
+		resolve(document.getElementById(hashedId));
 	});
 };
