@@ -11,7 +11,7 @@ Functionalities:
 * * *
 
 - [Installation](#installation)
-- [Examples](#examples)
+- [Usage](#usage)
 - [API](#api)
 - [Contribute](#contribute)
 - [License](#license)
@@ -36,7 +36,7 @@ CDN:
 <script src="https://unpkg.com/@pandasekh/dynamic-script-loader@latest/dist/index.umd.js" />
 ```
 
-## Examples
+## Usage
 
 ```js
 // Import using JS Modules
@@ -58,10 +58,12 @@ load("https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js").then(el
 ## API 
 - ### load
 `load(src: string) => Promise<HTMLScriptElement>`
+
 Default function, it will load a script asynchronously and return the HTMLScriptElement just created.
 
 ## Contribute
 Contributions are welcome and appreciated.
+Currently I need to setup some tests.
 
 ## License
 [MIT License](https://github.com/PandaSekh/Dynamic-Script-Loader/blob/master/LICENSE) (c) 2021 Alessio Franceschi
