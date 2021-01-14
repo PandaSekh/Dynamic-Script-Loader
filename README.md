@@ -1,5 +1,6 @@
 # Dynamic Script Loader
 ![Node.js Package](https://github.com/PandaSekh/Dynamic-Script-Loader/workflows/Node.js%20Package/badge.svg)
+[![codecov](https://codecov.io/gh/PandaSekh/Dynamic-Script-Loader/branch/master/graph/badge.svg?token=KTUH71UEZS)](https://codecov.io/gh/PandaSekh/Dynamic-Script-Loader)
 ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@pandasekh/dynamic-script-loader@latest)
 
 > 🐼 Tiny (~300B) package to dynamically import Javascript files only when needed
@@ -37,11 +38,6 @@ yarn add @pandasekh/dynamic-script-loader
 - Skypack
 ```js 
 import loader from 'https://cdn.skypack.dev/@pandasekh/dynamic-script-loader';
-```
-
-- Skypack Minified (Recommended) - v1.0.1
-```js 
-import loader from 'https://cdn.skypack.dev/pin/@pandasekh/dynamic-script-loader@v1.0.1-1LiC7Jxsjxsz9e47Rvhc/min/@pandasekh/dynamic-script-loader.js';
 ```
 
 - unpkg
