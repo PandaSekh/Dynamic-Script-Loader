@@ -4,9 +4,9 @@
 > Tiny (<350B) package to dynamically import Javascript files only when needed 🐼
 
 Functionalities:
-- Promise based,
-- Hashes the script source, preventing multiple identical imports,
-- Small, UMD file is about 350 bytes only!
+- Promise based
+- Hashes the script source, preventing multiple identical imports
+- Small, UMD file is less than 350 bytes only!
 
 * * *
 
